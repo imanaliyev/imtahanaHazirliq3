@@ -1,0 +1,305 @@
+#slider{
+
+}
+#our-mission{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0px;
+    background-image: url('https://mobirise.com/extensions/floram4/floral-studio/assets/images/background2.jpg');
+    .container{
+        width: 1068px;
+        height: 534px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .txt{
+            width: 534px;
+            height: 100%;
+            background-color: #1b745e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         
+            .content{
+                width: 60%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                gap: 20px;
+                color: white;
+                h1{
+                    font-size: 53px;
+                    font-weight: 200;
+                }
+                p{
+                    font-weight: 200;
+
+                }
+                button{
+                    width: 161px;
+                    height: 46px;
+                }
+
+            }
+        }
+        .image{
+            width: 534px;
+            height: 100%;
+            img{
+                height: 100%;
+            }
+
+        }
+
+    }
+
+}
+#pricing{
+    background-image: url('https://mobirise.com/extensions/floram4/floral-studio/assets/images/background1.jpg');
+    display: grid;
+    place-items: center;
+    padding-top: 30px;
+    .header{
+        text-align: center;
+        p{
+            color: #1b745e;
+        }
+        h1{
+            font-size: 43px;
+            font-weight: 200;
+        }
+    }
+    .add{
+        margin: 30px 0px;
+        button{
+            width: 200px;
+            height: 60px;
+            background-color: #1b745e;
+            color: white;
+            font-weight: bold;
+            transition: 100ms;
+            
+            &:hover{
+                border-radius: 10px;
+            }
+        }
+    }
+    .products{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        
+        gap: 20px;
+        
+        .card{
+            width: 355px;
+         
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+            &:hover  {
+                .add-basket{
+                    opacity: 1;
+                }
+                button{
+                    opacity: 1;
+                }
+                .details{
+                    opacity: 1;
+                }
+
+            }
+            button{
+                background-color: #1b745e;
+                color: white;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100%;
+                cursor: pointer;
+                transition: 200ms;
+                position: absolute;
+                top: 20px;
+                right: 80px;
+                opacity: 0;
+                &:hover{
+                    color: rgb(158, 23, 23);
+                }
+               
+            }
+            .details{
+                background-color: #1b745e;
+                color: white;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100%;
+                cursor: pointer;
+                transition: 200ms;
+                position: absolute;
+                top: 20px;
+                left: 40px;
+                opacity: 0;
+                &:hover{
+                    animation: rotate 0.3s linear ;
+                   
+                }
+
+            }
+
+               
+                .add-basket{
+                    
+                    background-color: #1b745e;
+                    color: white;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 100%;
+                    cursor: pointer;
+                    transition: 200ms;
+                    opacity: 0;
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                 
+                    
+                    &:hover{
+                        animation: rotate 0.3s linear ;
+    
+                    }
+                    @keyframes rotate{
+                        0%{
+                            transform: rotate(0deg);
+                        }
+                        50%{
+                            transform: rotate(180deg);
+                        }
+                        100%{
+                            transform: rotate(360deg);
+                        }}
+    
+                }
+
+            
+           
+            img{
+                height: 355px;
+            }
+            p{
+                font-size: 18px;
+                color: #1b745e;
+            }
+        }
+       
+    }
+    .cards{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 40px;
+        .sub-card{
+            background-color: #fef1e6;
+      
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 335px;
+            height: 380px;
+            border: 1px solid #1b745e;
+            padding: 40px;
+            gap: 20px;
+            p{
+                color: #1b745e;
+                span{
+                    font-size: 40px;
+                }
+            }
+            p:nth-of-type(2){
+                font-size: 22px;
+            }
+            p:nth-of-type(3){
+                font-weight: 300;
+                text-align: center;
+            }
+            button{
+                width: 160px;
+                height: 30px;
+                background-color: #1b745e3a;
+                color: #1b745e;
+                font-weight: 700;
+            }
+
+
+        }
+    }
+  
+}
+#add{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    background-image: url('https://mobirise.com/extensions/floram4/floral-studio/assets/images/background1.jpg');
+    h1{
+        margin-bottom: 60px;
+    }
+    form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        input{
+            width: 300px;
+            height: 40px;
+            padding-left: 10px;
+            border: none;
+            &:focus{
+                outline: none;
+            }
+
+        }
+        button{
+            width: 170px;
+            height: 30px;
+            background-color: #1b745e;
+            color: white;
+        }
+    }
+}
+#detail{
+    background-image: url('https://mobirise.com/extensions/floram4/floral-studio/assets/images/background2.jpg');
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    .container-detail{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .card-detail{
+            display: flex;
+            flex-direction: column;
+            img{
+                height: 355px;
+            }
+            p{
+                font-size: 22px;
+                color: #1b745e;
+            }
+        }
+    }
+
+}

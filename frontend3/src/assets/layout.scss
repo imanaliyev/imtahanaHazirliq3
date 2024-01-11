@@ -1,0 +1,35 @@
+header{
+    background-color: #1b745e;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    opacity: 0.9;
+
+    
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 40px;
+        color: white;
+        font-weight: 500;
+        .logo{
+            font-size: 22px;
+            opacity: 1;
+            color: white;
+        }
+        .nav-link{
+            display: flex;
+            gap: 40px   ;
+            font-size: 20px;
+           a{
+            color: white;
+            
+           
+           }
+        }
+
+    }
+}
